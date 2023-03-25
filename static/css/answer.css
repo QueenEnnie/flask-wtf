@@ -1,0 +1,61 @@
+h4 {
+   color: #dcdcdc;
+   padding-left: 20pt
+}
+
+h1.access{
+   background: url('/static/img/MARS-2-7.png') no-repeat center left;
+   padding-left: 118pt;
+}
+
+h2.distribution{
+   padding-left: 50pt;
+}
+
+td.cell{
+   background: #e6e6fa
+}
+
+td.finish{
+   background: #ffddf4
+}
+
+td.title{
+   width: 220pt;
+}
+
+td.leader{
+   width: 100pt;
+}
+
+td.duration{
+   width: 70pt;
+}
+
+td.members{
+   width: 100pt;
+}
+
+td.is_finished{
+   width: 100pt;
+}
+
+td.alien{
+   width: 300pt;
+}
+
+th.mini_male{
+    background: #B0E0E6;
+}
+
+th.mini_female{
+    background: #FFA07A;
+}
+
+th.male{
+    background: #0000FF;
+}
+
+th.female{
+    background: #FF6347;
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% set text = ["Фамилия:", "Имя:", "Образование:", "Профессия:", "Пол:",
+                 "Мотивация:", "Готовы остаться на Марсе?"] %}
+    {% for elem in dictionary %}
+    {% if elem != "title" %}
+        <p>{{ text[loop.index0 - 1] }} {{ dictionary[elem] }}</p>
+    {% endif %}
+    {% endfor %}
+{% endblock %}

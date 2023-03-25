@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p></p>
+    <h2 align="center">Оформление каюты</h2>
+    {% if age <= 21  and sex == "male"%}
+        <table class="table table-borderless">
+          <thead class="table-secondary">
+            <tr>
+              <td scope="col" class="alien">Цвет стены</td>
+              <td scope="col" class="alien">Эмблема</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="mini_male"></th>
+              <td align="center"> <img src="/static/img/mini_alien.jpg"
+              alt="здесь должна была быть картинка, но не нашлась"></td>
+            </tr>
+          </tbody>
+        </table>
+    {% elif age > 21  and sex == "male"%}
+        <table class="table table-borderless">
+          <thead class="table-secondary">
+            <tr>
+              <td scope="col" class="alien">Цвет стены</td>
+              <td scope="col" class="alien">Эмблема</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="male"></th>
+              <td align="center"> <img src="/static/img/alien.jpg"
+              alt="здесь должна была быть картинка, но не нашлась"></td>
+            </tr>
+          </tbody>
+        </table>
+    {% elif age <= 21  and sex == "female"%}
+        <table class="table table-borderless">
+          <thead class="table-secondary">
+            <tr>
+              <td scope="col" class="alien">Цвет стены</td>
+              <td scope="col" class="alien">Эмблема</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="mini_female"></th>
+              <td align="center"> <img src="/static/img/mini_alien.jpg"
+              alt="здесь должна была быть картинка, но не нашлась"></td>
+            </tr>
+          </tbody>
+        </table>
+    {% elif age > 21  and sex == "female"%}
+        <table class="table table-borderless">
+          <thead class="table-secondary">
+            <tr>
+              <td scope="col" class="alien">Цвет стены</td>
+              <td scope="col" class="alien">Эмблема</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="female"></th>
+              <td align="center"> <img src="/static/img/alien.jpg"
+              alt="здесь должна была быть картинка, но не нашлась"></td>
+            </tr>
+          </tbody>
+        </table>
+    {% endif %}
+{% endblock %}
